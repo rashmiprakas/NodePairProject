@@ -5,9 +5,7 @@ process.stdin.on('data', (data)=>{
     // process.stdout.write('You typed: ' + cmd);
     // process.stdout.write('\nprompt > ');
 
-    if (cmd === 'pwd') {
-        console.log(`${process.cwd()}`);
-    }
+    
 });
-
- 
+const pwd = require('./pwd');
+pwd();
